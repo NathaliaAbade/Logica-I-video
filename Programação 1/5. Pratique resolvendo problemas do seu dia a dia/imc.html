@@ -1,0 +1,25 @@
+<meta charset = "UFT-8">
+
+<script>
+	function pulaLinha() {
+		document.write("<br>");
+		document.write("<br>");
+	}
+	
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+
+	function calculaImc(peso, altura) {
+		var imc = peso/(altura*altura);
+		return imc;
+	}
+
+	var imcFlavio = calculaImc(1.71, 71);
+	var imcAmigo = calculaImc(1.72, 68);
+
+	mostra(imcFlavio);
+	mostra (imcAmigo);
+
+</script>
